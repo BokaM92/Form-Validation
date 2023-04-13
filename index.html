@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/themify-icons.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <h1>Checkout</h1>
+      </div>
+      <div class="main-container">
+        <form id="info-container" onsubmit="return false">
+          <div class="contact-info">
+            <h2>Contact infomation</h2>
+            <div class="input-holder">
+              <label for="firstname">First name</label>
+              <div class="input">
+                <span><i class="ti-user"></i></span>
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="Enter your first name here"
+                />
+              </div>
+            </div>
+
+            <div class="input-holder">
+              <label for="lastname">Last name</label>
+              <div class="input">
+                <span><i class="ti-user"></i></span>
+                <input
+                  type="text"
+                  id="lastname"
+                  name="lastname"
+                  placeholder="Enter your last name here"
+                />
+              </div>
+            </div>
+
+            <div class="input-holder">
+              <label for="email">E-mail</label>
+              <div class="input">
+                <span><i class="ti-email"></i></span>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email here"
+                />
+              </div>
+            </div>
+            <div class="input-holder">
+              <label for="phone">Phone</label>
+              <div class="input">
+                <span><i class="ti-mobile"></i></span>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone here"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="shipping-info">
+            <h2>Shipping address</h2>
+            <div class="input-holder">
+              <label for="address">Address</label>
+              <div class="input">
+                <span><i class="ti-home"></i></span>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Enter your address here"
+                />
+              </div>
+            </div>
+            <div class="input-holder">
+              <label for="city">City</label>
+              <div class="input">
+                <span><i class="ti-bar-chart"></i></span>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Enter your city here"
+                />
+              </div>
+            </div>
+            <div class="input-holder">
+              <label for="postal">Postal code</label>
+              <div class="input">
+                <span><i class="ti-folder"></i></span>
+                <input
+                  type="text"
+                  id="postal"
+                  name="postal"
+                  placeholder="Postal code"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="more-info">
+            <h2>Special requirements</h2>
+            <div class="input-holder">
+              <div class="input">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Type your Message..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="btn-holder">
+            <button type="submit" id="submit" class="btn btn-one">
+              <span><i class="fas fa-paper-plane"></i> SEND MESSAGE</span>
+            </button>
+          </div>
+        </form>
+        <div class="store">
+          <div class="item-container">
+            <div class="item">
+              <img src="img/photo1.png" alt="" />
+              <div class="item-info">
+                <h3 class="item-title">Vintage Backbag</h3>
+                <div class="item-price">
+                  <span>$54.99</span>
+                  <span>$94.99</span>
+                </div>
+                <div class="price-counter">
+                  <button>+</button>
+                  <span> 1 </span>
+                  <button>-</button>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/photo2.png" alt="" />
+              <div class="item-info">
+                <h3 class="item-title">Levi Shoes</h3>
+                <div class="item-price">
+                  <span>$74.99</span>
+                  <span>$124.99</span>
+                </div>
+                <div class="price-counter">
+                  <button>+</button>
+                  <span> 1 </span>
+                  <button>-</button>
+                </div>
+              </div>
+            </div>
+            <div class="shipping line">
+              <span>Shipping</span>
+              <span>$19</span>
+            </div>
+            <div class="total line">
+              <span>Total</span>
+              <span>$148.98</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

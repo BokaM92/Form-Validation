@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  height: 46px;
+  position: relative;
+  line-height: 46px;
+  border-radius: 15px;
+  border: 1px solid #0b5071;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn span {
+  position: relative;
+  display: block;
+  z-index: 3;
+  padding: 0 35px;
+  color: #fff;
+}
+
+.btn-one {
+  background-color: #0b5071;
+  color: #fff;
+}
+
+.btn-one::before {
+  content: "";
+  position: absolute;
+  background-color: #555;
+  display: inline-block;
+  width: 104%;
+  height: 100%;
+  top: 0;
+  left: -2%;
+  transform: skew(-8deg);
+  transition: left 0.4s;
+}
+
+.btn-one:hover::before {
+  left: 104%;
+}
+
+.btn-holder {
+  text-align: center;
+}
+
+#page {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px 15px;
+}
+
+#header {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#header h1 {
+  color: #4e5150;
+  font-weight: 600;
+  font-size: 42px;
+  padding: 10px;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main-container form {
+  width: 49%;
+}
+
+.main-container h2 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.main-container .shipping-info {
+  margin: 30px 0;
+}
+
+.main-container .input-holder label {
+  color: #4f4f4f;
+}
+
+.main-container .input-holder .input {
+  width: 100%;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  color: #828282;
+  margin: 5px 0 10px 0;
+}
+
+.main-container .input-holder .input input {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  color: #828282;
+  padding: 20px 0 20px 40px;
+  border: 1px solid #828282;
+  border-radius: 10px;
+}
+
+.main-container .input-holder .input span {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+}
+
+.main-container .input-holder textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.main-container .store {
+  width: 49%;
+}
+
+.main-container .store .item-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.main-container .store .item-container .item {
+  display: flex;
+}
+
+.main-container .store .item-container .item:first-child {
+  margin-bottom: 30px;
+}
+
+.main-container .store .item-container .item:nth-child(2) {
+  margin-bottom: 60px;
+}
+
+.main-container .store .item-container .item img {
+  max-width: 107px;
+  border-radius: 15px;
+}
+
+.main-container .store .item-container .item .item-info {
+  margin-left: 10px;
+  color: #4e5150;
+}
+
+.main-container .store .item-container .item .item-info h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.main-container .store .item-container .item .item-info .item-price {
+  margin-bottom: 20px;
+}
+
+.main-container
+  .store
+  .item-container
+  .item
+  .item-info
+  .item-price
+  span:first-child {
+  font-size: 16px;
+  color: #f2994a;
+}
+
+.main-container
+  .store
+  .item-container
+  .item
+  .item-info
+  .item-price
+  span:last-child {
+  font-size: 12px;
+  margin-left: 5px;
+  text-decoration-line: line-through;
+  color: #4e5150;
+}
+
+.main-container .store .item-container .item .item-info .price-counter {
+  border: 1px solid #4e5150;
+  padding: 10px;
+  width: 90px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.main-container .store .item-container .item .item-info .price-counter button {
+  border-radius: 5px;
+}
+
+.main-container .store .item-container .line {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #4e5150;
+  padding-top: 10px;
+}
+
+.main-container .store .item-container .shipping {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    margin-bottom: 10px;
+  }
+
+  .main-container {
+    flex-direction: column-reverse;
+  }
+
+  .main-container .store {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-container .store .item-container {
+    width: 100%;
+  }
+
+  .main-container form {
+    width: 100%;
+    padding-left: 5px;
+    margin-top: 40px;
+  }
+}
